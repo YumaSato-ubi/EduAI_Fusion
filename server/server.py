@@ -6,6 +6,9 @@ from keras.models import load_model
 from flask_cors import CORS
 import base64
 import io
+from gpt_scoring import gpt_scoring
+from google.cloud import vision
+from google.oauth2 import service_account
 
 np.set_printoptions(suppress=True)
  
@@ -18,12 +21,13 @@ def judge():
     file = request.form['image']
     code = base64.b64decode(file.split(',')[1])
     img = Image.open(io.BytesIO(code))
-    img = img.resize((150,150))
+    #img = img.resize((150,150))
 
-    img = np.array(img)/255
-    img_expand = img[np.newaxis, ...]
+    # img = np.array(img)/255
+    # img_expand = img[np.newaxis, ...]
+    a = gpt_scoring()
     try:
-        p = "サーバに画像がきたよ"
+        p = a
         
     except:
         result = "画像の形式が違うため，判定できません"

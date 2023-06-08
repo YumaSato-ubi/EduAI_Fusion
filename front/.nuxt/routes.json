@@ -2,29 +2,29 @@
   {
     "name": "App",
     "path": "/App",
-    "component": "/Users/satouyuuma/Desktop/work/EduAI_Fusion/front/pages/App.vue",
+    "component": "C:\\\\Users\\\\nakam\\\\EduAI_Fusion\\\\front\\\\pages\\\\App.vue",
     "chunkName": "pages/App",
-    "_name": "_db8a374a"
+    "_name": "_5edea450"
   },
   {
     "name": "App_backup",
     "path": "/App_backup",
-    "component": "/Users/satouyuuma/Desktop/work/EduAI_Fusion/front/pages/App_backup.vue",
+    "component": "C:\\\\Users\\\\nakam\\\\EduAI_Fusion\\\\front\\\\pages\\\\App_backup.vue",
     "chunkName": "pages/App_backup",
-    "_name": "_7eceac54"
+    "_name": "_718ffc41"
   },
   {
     "name": "sample",
     "path": "/sample",
-    "component": "/Users/satouyuuma/Desktop/work/EduAI_Fusion/front/pages/sample.vue",
+    "component": "C:\\\\Users\\\\nakam\\\\EduAI_Fusion\\\\front\\\\pages\\\\sample.vue",
     "chunkName": "pages/sample",
-    "_name": "_53582bc0"
+    "_name": "_77176bab"
   },
   {
     "name": "index",
     "path": "/",
-    "component": "/Users/satouyuuma/Desktop/work/EduAI_Fusion/front/pages/index.vue",
+    "component": "C:\\\\Users\\\\nakam\\\\EduAI_Fusion\\\\front\\\\pages\\\\index.vue",
     "chunkName": "pages/index",
-    "_name": "_2d0e322c"
+    "_name": "_5fc1c8e1"
   }
 ]
