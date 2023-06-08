@@ -2,7 +2,7 @@
     <div>
         <h2 v-if="!result">画像をアップロードしてください</h2>
         <h2 v-if="result">{{ result }}</h2>
-        <v-img :src="result" v-if="result" />
+        <v-img :src="result" />
         <label v-if="!value" class="upload-content-space user-photo default">
             <input class="file-button" type="file" @change="upload" />
             アップロード

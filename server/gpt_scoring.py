@@ -82,7 +82,7 @@ def gpt_scoring():
     ####################################
     # テキストデータをchatGPTへ入力し採点
     ####################################
-    openai.api_key = "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"
+    openai.api_key = "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"
 
     response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo",
@@ -133,7 +133,7 @@ def gpt_scoring():
                 cv2.line(img2, (res.position[1][0], res.position[0][1]), (res.position[0][0], res.position[1][1]), (0,0,255), thickness=1)      
     # cv2.imshow("image", img2)
     # cv2.waitKey(0)
-    binary_img = base64.b64encode(img2)
+    binary_img = cv2.imencode('.jpeg', img2)
     print(binary_img)
 
 
