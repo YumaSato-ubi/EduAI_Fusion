@@ -1,7 +1,8 @@
 <template>
     <div>
         <h2 v-if="!result">画像をアップロードしてください</h2>
-        <h2 v-if="result">{{ result }}</h2>
+        <!-- <h2 v-if="result">{{ result }}</h2> -->
+        <img :src="result" />
         <label v-if="!value" class="upload-content-space user-photo default">
             <input class="file-button" type="file" @change="upload" />
             アップロード
@@ -65,7 +66,8 @@ export default {
           var params = new FormData()
           params.append('image', this.picture)
           const res = await this.$axios.$post('http://127.0.0.1:5000/', params, {withCredentials: true})
-          this.result = res
+          this.result = "data:image/png;base64," + res;
+          console.log(this.result)
         }
 
     }
